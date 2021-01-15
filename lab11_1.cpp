@@ -2,16 +2,15 @@
 
 using namespace std;
 
-int fibonacci(int);
+long long int fibonacci(long long int);
 
 int main(){
-    int x;
-    cin >> x;
-    cout << fibonacci(x);
+    long long int x;
+    cout << fibonacci(50);
     return 0; 
 }
-int fibonacci(int x) {
-    int sum = 0;
+long long int fibonacci(long long int x) {
+    long long int sum = 0;
     if (x == 0) sum = 0;
     if (x == 1) sum = 1;
     if (x > 1) sum += fibonacci(x-1) + fibonacci(x-2);
